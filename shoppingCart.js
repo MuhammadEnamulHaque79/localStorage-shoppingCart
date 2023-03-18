@@ -49,3 +49,17 @@ const displayProduct =(product,quantity)=>{
     productContainer.appendChild(productDiv);
 }
 
+//display product from localStorage;
+
+const displayProductFromLocalStorage =()=>{
+    const savedCart = getStoredShoppingCart();
+    console.log(savedCart);
+    for(const product in savedCart){
+        const quantity = savedCart[product];
+        console.log(product,quantity);
+        displayProduct(product,quantity);
+
+    }
+
+}
+displayProductFromLocalStorage();
