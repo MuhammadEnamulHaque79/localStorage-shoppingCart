@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoppingCart</title>
-
+    <style>
+       #product-container{
+            border:1px solid sandybrown;
+            border-radius: 5px;
+            margin-top: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+      
+    </style>
 </head>
 <body>
     
     <input id="product-name" type="text" placeholder="Type product name">
     <input id="product-quantity" type="text" placeholder="Type product-quantity">
     <button onclick="addProduct()">Add Product</button>
+
+    <div id="product-container"></div>
+
+
     <script src="./shoppingCart.js"></script>
 </body>
 </html>
